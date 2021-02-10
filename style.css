@@ -1,0 +1,41 @@
+/* Font families */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/* Global Styles */
+html{
+    font-family: 'Poppins',
+    sans-serif;
+    font-size: 16px;
+}
+body{
+     background-color: #012E40;
+     opacity: 1;
+}
+/* index page */
+
+.opening1,
+.opening2{
+    display: inline-block;
+    width: 620px;
+    height: 610px;
+    overflow: hidden;
+   
+}
+.opening2 {
+    background: transparent radial-gradient(closest-side at 50% 50%, #F2C673 0%, #9A690E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 79px;
+    margin-left: 373px;
+    border-radius: 50%;
+    
+}
+.opening1{
+    background: transparent radial-gradient(closest-side at 50% 50%, #CBC2C2 0%, #857070 59%, #312C2C 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.company_slogan{
+    display: none;
+}
