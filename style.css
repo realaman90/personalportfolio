@@ -1,23 +1,19 @@
 /* Font families */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
-
+ @import url("https://use.typekit.net/wvi6ste.css");
 /* Global Styles */
 html{
-    font-family: 'Poppins',
+    font-family: 'Poppins', sans-serif,
     sans-serif;
     font-size: 16px;
 }
-body{
-     background-color: #012E40;
-     opacity: 1;
-     animation: colorchange 2s .8s forwards;
+body{     
      width: 100vw;
      height: 100vh;
      overflow: hidden;
-     position: fixed;
+    
 }
-
 
 
 /* index page */
@@ -27,7 +23,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    animation: colorchange 2s 1s forwards;
+    background-color: #012E40; 
     
 }
 .container{
@@ -61,22 +58,59 @@ body{
 }
 
 .company_slogan{
-    display: none;
+    display: block;
     position: absolute;
-    top:482px;
-    left: 128px;
+    top: 70%;
+    left: 4%;
+    text-align: left;
+    line-height: .24; 
     z-index: 10;
     opacity: 0;
-    color: white;
- 
-}
-.company_slogan{
-    opacity: 1;
-}
-.company_slogan.standout_txt{
+    width: 81%;
+    height: 20%;
+    animation: show-info 2s ease-in 1.5s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
     
-    font-size:6.25rem ;
 }
+.company_slogan .content h2{
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+    display: block;
+    font-size:3.36rem;
+    color: #012E40;
+    
+}
+.standout_txt{
+    font-family: turbinado-pro,
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 6.6rem;
+    color: #f27405cc;
+    
+}
+ a{
+    position: absolute;
+    left: 80%;
+    color: #F2E6C2;
+    font-size: 1.5rem;
+    background-color: #012E40;
+    box-sizing: border-box;
+    padding: 1.8% 3%;
+    text-decoration: none;
+    border-radius: 5%;
+   
+    /* transition: background-color 2s linear cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+}
+a:hover{
+    color: #012E40;
+    background-color: #F2C673;
+}
+
 
 @keyframes colorchange {
     from {
@@ -85,6 +119,7 @@ body{
 
     to {
         background-color: white;
+        
     }
 } 
 
@@ -99,5 +134,13 @@ body{
         height: 9.5%;
         margin-left: 90%;
                 
+    }
+}
+@keyframes show-info{
+    from { opacity: 0;
+
+    }
+    to {
+        opacity: 1;
     }
 }
