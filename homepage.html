@@ -6,53 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aman Rawat</title>
     <link rel="stylesheet" href="./style-html.css">
-    <script src="./script.js"></script>
+    
 </head>
 <body>
+    
     <main>
-            <div class="ball-container" id="ball-container">
-                    <div class="ball" id="ball"></div>
-            </div>
-            <div class="bar" id="bar"></div>
-            
-        <div class="company_slogan_home" id="company_slogan_home">
-            <div class="content" id="content">
-                <h2>Ideas well executed make products shine, <br> We ensure total transperency & better <br> collaboration to help you scale.</h2>
-            </div>
-        </div>
-     <!-- on scroll transition reauired  -->
         <div class="navigation" id="navigation">
 
-            <div class="nav-icon" id="nav-icon"></div>
-            <div class="nav-icon2"   id="nav-icon2"></div>
-            <div class="nav-icon2"   id="nav-icon2"></div>
-            <div class="navbar" id="navbar"></div>
-        </div>
-    <section class="aman_rawat_introduction"id="aman_rawat_introduction">
+                <div class="nav-icon" id="nav-icon"></div>
             
-            <div class="name" id="name"><h2>Aman Rawat</h2></div>
-            <div class="title_desc"id="disc"><h3>Front-end Developer and Design Thinking practitioner </h3>
-            </div><br>
-            <div class="intro_content"id="intro_content">
-                <p>Are you looking to make a striking difference to your brand presence or products? <br> 
-                    I can help you identify and implement innovative ideas across a range of media: from brand identities to brochures,
-               websites,
-               photography,
-               progressive web apps etc. </p>
-            </div>
+                <div class="navbar" id="navbar"></div>
         </div>
-    </section>
-        <!-- end of about me next is either on scroll or navigation -->
-  
+        <div class="page1" id="page1">
+                <div class="ball-container" id="ball-container">
+                        <div class="ball" id="ball"></div>
+                </div>
+                <div class="bar" id="bar"></div>
+                
         
+        <!-- on scroll transition reauired  -->
             
+            <section class="aman_rawat_introduction"id="aman_rawat_introduction">
+                
+                <div class="name" id="name"><h2>Aman Rawat</h2></div>
+                <div class="title_desc"id="disc"><h3>Front-end Developer and Design Thinking practitioner </h3>
+                </div><br>
+                <div class="intro_content"id="intro_content">
+                    <p>Are you looking to make a striking difference to your brand presence or products? <br> 
+                        I can help you identify and implement innovative ideas across a range of media: from brand identities to brochures,
+                websites,
+                photography,
+                progressive web apps etc. </p>
+                </div>
+            </div>
+            </section>
+        </div>
+        
 
 
+    <!-- < !-- skills and Projects --> 
+        <div class="page2" id="page2">
+            <section name="skills"class="skills"id="skills">
+                <h2 class="skills_header" id="skills-header">Skills</h2>
+                <div class="icons_container"id="icons_container">
+                    <a href="#"><img src="./Images/html5_orange.png"alt="HTML5"></a>
+                    <a href="#"><img src="./Images/Html5_css3_styling_blue.png"alt="CSS"></a>
+                    <a href="#"><img src="./Images/JS icon.png"alt="javascript"></a><a href="#"><img src="./Images/React-icon-blue.png"alt=""></a>
+                    <a href="#"><img src="./Images/Xd Icon.png"alt=""></a><a href="#"><img src="./Images/Ai icon.png"alt=""></a>
+                </div>
+            </section>
 
+
+            <section name="projects"class="projects"id="projects">
+                <!-- < !-- First project --> 
+                <h2>Projects</h2>
+                <div class="project_container" id="project_container" >
+                    <div class="project_companywebsite"id="project_companywebsite">
+                        <div class="companywebsite_title"id="companywebsite_title">
+                            <h3>Company Website</h3>
+                        </div>
+                            
+                    </div>
+                    <!-- < !-- Second project  -->
+                    <div class="project_bim_platform"id="project_bim_platform">
+                        <div class="bim_platform_title"id="bim_platform_title">
+                            <h3>Building Information Management Platform</h3>
+                        </div>
+                       
+                    </div>
+                    <!-- Third project  -->
+                    <div class="project_e_commerce_platform"id="project_e_commerce_platform">
+                        <div class="e_commerce_platform_title"id="e_commerce_platform_title">
+                            <h3>E-commerce platform</h3>
+                        </div>
+                        
+                    </div>
+                    <!-- Fourth project -->
+                    <div class="project_reddit"id="project_reddit">
+                        <div class="reddit_title"id="reddit_title">
+                            <h3>E-commerce platform</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Contact  -->
+        <div class="page3" id="page3">
+            <section class="contact"id="contact">
+                <h2>Contact</h2>
+                <form action="./homepage.html"method="POST">
+                    <input type="text"name="name"id="name"required value="Please enter your name"><br><br>
+                    <input type="text"name="email"id="email"required value="Please enter your email" ">
+                    <br><br>
+                    <input type="text"name="phone_number"id="phone_number"value="Contact no."required pattern="[0-9]{10}">
+                    <br><br>
+                    <textarea name="message"id="message"cols="30"rows="10">Please type your message</textarea>
+                    <br><br>
+                    <label for="service" class="label_service">Service</label>
+                    <br>
+                    <input type="checkbox"name="service"id="service"value="Design">Design</input>
+                    <input type="checkbox"name="service"id="service"value="Devlopment">Development</input>
+                    <br>
+                    <input type="checkbox"name="service"id="service"value="Content Marketing">Content Marketing</input>
+                    <input type="checkbox"name="service"id="service"value="Design Thinking">Design Thinking</input>
+                    <br><br>
+                    <input type="submit"value="Send"class="submit"id="submit">
+                </form>
+            </section>
+        </div>
 
         
 
         
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
