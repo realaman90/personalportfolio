@@ -147,12 +147,12 @@ html {
 }
 .icons_container img{
     margin: 0px 20px 20px 20px;
-    transition: height 2s linear 2s;
+    transition: transform .2s linear .2s;
     cursor: pointer;
     
 }
 .icons_container img:hover {
-    height: 100%;
+    transform: scale(1.5);
    
 }
 .project_container{
@@ -176,7 +176,7 @@ html {
     margin: 2% 2%;
     justify-content: center;
     cursor: pointer;
-    
+    transition: display 1s linear 1s;
 }
 .project_companywebsite{
     
@@ -194,8 +194,10 @@ html {
     margin: 0 auto;
 }
 #project_content {
+    transform: scale(1.2);
     overflow: hidden;
     display: none;
+    transition: display 1s linear 1s;
     position: absolute;
     flex-direction: column;
     align-content: center;
@@ -205,7 +207,7 @@ html {
     font-weight: 200;
     color: #F2E6C2;
     background: #012E40 0% 0% no-repeat padding-box;
-    opacity: 0.9;
+    
     width: 300px;
     height: 300px;
     border-radius:50% ;
@@ -213,8 +215,8 @@ html {
   
     
 }
-#icon_container {
-   
+#bim_content {
+   margin: 0px 15px 0px 15px;
     
 }
 
